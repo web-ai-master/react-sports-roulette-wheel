@@ -1,0 +1,217 @@
+{
+    "groups": [
+        {
+            "id": 1,
+            "name": "NCAA Football Division 1",
+            "image": "https://res.cloudinary.com/dzcx399ln/image/upload/f_auto,c_fill,w_250,h_73/ncsa/wp-content/themes/ncsa/assets/images/logo-ncsa-white-no-pad.png",
+            "teams": [
+                {
+                    "id": 1,
+                    "name": "team 1 name",
+                    "image": "https://www.cookman.edu/_cmfiles/images/logo.png"
+                },
+                {
+                    "id": 2,
+                    "name": "team 2 name",
+                    "image": "https://www.cookman.edu/_cmfiles/images/logo.png"
+                },
+                {
+                    "id": 3,
+                    "name": "team 3 name",
+                    "image": "https://www.cookman.edu/_cmfiles/images/logo.png"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "NCAA Men’s Basketball Division 1",
+            "image": "https://res.cloudinary.com/dzcx399ln/image/upload/f_auto,c_fill,w_250,h_73/ncsa/wp-content/themes/ncsa/assets/images/logo-ncsa-white-no-pad.png",
+            "teams": [
+                {
+                    "id": 1,
+                    "name": "team 4 name",
+                    "image": "https://www.asu.edu/modules/webspark/asu_brand/node_modules/@asu/component-header/dist/assets/img/arizona-state-university-logo-vertical.png"
+                },
+                {
+                    "id": 2,
+                    "name": "team 5 name",
+                    "image": "https://www.asu.edu/modules/webspark/asu_brand/node_modules/@asu/component-header/dist/assets/img/arizona-state-university-logo-vertical.png"
+                },
+                {
+                    "id": 3,
+                    "name": "team 6 Name",
+                    "image": "https://www.asu.edu/modules/webspark/asu_brand/node_modules/@asu/component-header/dist/assets/img/arizona-state-university-logo-vertical.png"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "NHL Teams",
+            "image": "https://s3951.pcdn.co/wp-content/uploads/2021/04/THW-logo.svg",
+            "teams": [
+                {
+                    "id": 1,
+                    "name": "team 7 name",
+                    "image": "https://www.asu.edu/modules/webspark/asu_brand/node_modules/@asu/component-header/dist/assets/img/arizona-state-university-logo-vertical.png"
+                },
+                {
+                    "id": 2,
+                    "name": "team 8 name",
+                    "image": "https://www.asu.edu/modules/webspark/asu_brand/node_modules/@asu/component-header/dist/assets/img/arizona-state-university-logo-vertical.png"
+                },
+                {
+                    "id": 3,
+                    "name": "team 9 name",
+                    "image": "https://www.asu.edu/modules/webspark/asu_brand/node_modules/@asu/component-header/dist/assets/img/arizona-state-university-logo-vertical.png"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "NBA Teams",
+            "image": "https://cdn.nba.com/logos/leagues/logo-nba.svg",
+            "teams": [
+                {
+                    "id": 1,
+                    "name": "team 10 name",
+                    "image": "https://www.asu.edu/modules/webspark/asu_brand/node_modules/@asu/component-header/dist/assets/img/arizona-state-university-logo-vertical.png"
+                },
+                {
+                    "id": 2,
+                    "name": "team 11 name",
+                    "image": "https://www.asu.edu/modules/webspark/asu_brand/node_modules/@asu/component-header/dist/assets/img/arizona-state-university-logo-vertical.png"
+                },
+                {
+                    "id": 3,
+                    "name": "team 12 name",
+                    "image": "https://www.asu.edu/modules/webspark/asu_brand/node_modules/@asu/component-header/dist/assets/img/arizona-state-university-logo-vertical.png"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "NFL Teams",
+            "image": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png&amp;w=64&amp;h=64&amp;scale=crop&amp;cquality=40&amp;location=origin",
+            "teams": [
+                {
+                    "id": 1,
+                    "name": "team 13 name",
+                    "image": "https://www.asu.edu/modules/webspark/asu_brand/node_modules/@asu/component-header/dist/assets/img/arizona-state-university-logo-vertical.png"
+                },
+                {
+                    "id": 2,
+                    "name": "team 14 name",
+                    "image": "https://www.asu.edu/modules/webspark/asu_brand/node_modules/@asu/component-header/dist/assets/img/arizona-state-university-logo-vertical.png"
+                },
+                {
+                    "id": 3,
+                    "name": "team 15 name",
+                    "image": "https://www.asu.edu/modules/webspark/asu_brand/node_modules/@asu/component-header/dist/assets/img/arizona-state-university-logo-vertical.png"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "MLB Teams",
+            "image": "http://www.mlbstatic.com/team-logos/league-on-dark/1.svg",
+            "teams": [
+                {
+                    "id": 1,
+                    "name": "team 16 name",
+                    "image": "https://www.asu.edu/modules/webspark/asu_brand/node_modules/@asu/component-header/dist/assets/img/arizona-state-university-logo-vertical.png"
+                },
+                {
+                    "id": 2,
+                    "name": "team 17 name",
+                    "image": "https://www.asu.edu/modules/webspark/asu_brand/node_modules/@asu/component-header/dist/assets/img/arizona-state-university-logo-vertical.png"
+                },
+                {
+                    "id": 3,
+                    "name": "team 18 name",
+                    "image": "https://www.asu.edu/modules/webspark/asu_brand/node_modules/@asu/component-header/dist/assets/img/arizona-state-university-logo-vertical.png"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "MLS Teams",
+            "image": "https://images.mlssoccer.com/image/upload/v1665849438/assets/logos/MLS-Crest-FFF-480px_tmwlkh.png",
+            "teams": [
+                {
+                    "id": 1,
+                    "name": "team 19 name",
+                    "image": "https://www.asu.edu/modules/webspark/asu_brand/node_modules/@asu/component-header/dist/assets/img/arizona-state-university-logo-vertical.png"
+                },
+                {
+                    "id": 2,
+                    "name": "team 20 name",
+                    "image": "https://www.asu.edu/modules/webspark/asu_brand/node_modules/@asu/component-header/dist/assets/img/arizona-state-university-logo-vertical.png"
+                },
+                {
+                    "id": 3,
+                    "name": "team 21 name",
+                    "image": "https://www.asu.edu/modules/webspark/asu_brand/node_modules/@asu/component-header/dist/assets/img/arizona-state-university-logo-vertical.png"
+                }
+            ]
+        }
+        
+    ],
+    "events": [
+        {
+            "id": 1,
+            "name": "Europe super soccer game",
+            "date": "2021-05-12",
+            "team_red": "team 10 name",
+            "team_black": "team 11 name"
+        },
+        {
+            "id": 2,
+            "name": "Europe super basket game",
+            "date": "2023-05-12",
+            "team_red": "team 12 name",
+            "team_black": "team 1 name"
+        },
+        {
+            "id": 3,
+            "name": "Asia super soccer game",
+            "date": "2021-05-12",
+            "team_red": "team 10 name",
+            "team_black": "team 5 name"
+        },
+        {
+            "id": 4,
+            "name": "Africa super basketball game",
+            "date": "2021-05-12",
+            "team_red": "team 3 name",
+            "team_black": "team 9 name"
+        },
+        {
+            "id": 5,
+            "name": "American super soccer game",
+            "date": "2021-05-12",
+            "team_red": "team 8 name",
+            "team_black": "team 12 name"
+        },
+        {
+            "id": 6,
+            "name": "Australia super soccer game",
+            "date": "2021-05-12",
+            "team_red": "team 2 name",
+            "team_black": "team 6 name"
+        },
+        {
+            "id": 7,
+            "name": "North Europe super soccer game",
+            "date": "2021-05-12",
+            "team_red": "team 2 name",
+            "team_black": "team 1 name"
+        },
+        {
+            "id": 8,
+            "name": "Central Asia super soccer game",
+            "date": "2021-05-12",
+            "team_red": "team 13 name",
+            "team_black": "team 10 name"
+        }
+    ]
+}
