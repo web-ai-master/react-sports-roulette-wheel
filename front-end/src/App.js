@@ -2,16 +2,17 @@ import React from "react";
 import { Container, Typography } from '@mui/material';
 import RouletteStepper from "./components/RouletteStepper";
 
+import "./assets/css/global.css";
 
 const App = () => {
 
 	return (
-		<Container component="main" style={{ backgroundColor: "#0f1924", fontColor: "#dae2ed" }}>
-			<Typography variant="h4" component="h1" display="flex" justifyContent="center" alignItems="center" marginBottom={2}>
+		<div className="pt-5" style={{ backgroundColor: "#0f1924", color: "white", height: "100vh" }}>
+			{/* <Typography variant="h4" component="h1" display="flex" justifyContent="center" alignItems="center" marginBottom={2}>
 				Roulette Stepper
-			</Typography>
+			</Typography> */}
 			<RouletteStepper />
-		</Container>
+		</div>
 	)
 }
 

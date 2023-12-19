@@ -60,13 +60,6 @@ const EventStep = ({
                     :
                     <p> There are no Upcoming Events. </p>
             }
-            {/* <Wheel
-                mustStartSpinning={true}
-                prizeNumber={3}
-                data={data}
-                backgroundColors={['#3e3e3e', '#df3428']}
-                textColors={['#ffffff']}
-            /> */}
         </div>
     )
 }

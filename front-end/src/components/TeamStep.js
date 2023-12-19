@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
+import { Grid } from "@mui/material";
+
 // import { GROUPS_API } from '../utils/api';
 
 const teamlist_url = [
@@ -36,27 +38,25 @@ const TeamStep = ({ selectedGroup, onSelectTeam, onHandleNext }) => {
 	};
 
 	return (
-		<div>
-			<h1>{selectedGroup.name}</h1>
+		<Grid container spacing={3} className="content-center">
 			{selectedGroup.teams.map((team) => (
-				<img
-					style={{
-						width: "100px",
-						height: "100px",
-						padding: "10px",
-						borderRadius: "50%",
-						// border: '1px solid #000',
-						marginRight: "10px",
-						cursor: "pointer",
-						// backgroundColor: 'black',
-					}}
-					key={team.id}
-					src={team.image}
-					onClick={() => handleSelectTeam(team)}
-					alt={team.displayName}
-				/>
+				<Grid item xs={3} className="text-center">
+					<img
+						key={team.id}
+						style={{
+							width: "200px",
+							height: "150px",
+							objectFit: "contain",
+						}}
+						className="p-1 cursor-pointer"
+						onClick={() => handleSelectTeam(team)}
+						src={team.image}
+						alt={team.displayName}
+					/>
+					<h3>{team.name}</h3>
+				</Grid>
 			))}
-		</div>
+		</Grid>
 	);
 };
 

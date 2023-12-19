@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Stepper, Step, StepLabel, Button, Container } from "@mui/material";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 import GroupStep from "./GroupStep";
 import TeamStep from "./TeamStep";
@@ -63,26 +64,29 @@ const RouletteStepper = () => {
 
     return (
         <Container>
-            <Stepper activeStep={activeStep} alternativeLabel sx={{padding: '30px 10px'}}>
+            <Stepper activeStep={activeStep} alternativeLabel className="p-1 mb-5">
                 {steps.map((label) => (
                     <Step key={label}>
                         <StepLabel>
-                            {label}
+                            <span className="color-white">{label}</span>
                         </StepLabel>
                     </Step>
                 ))}
             </Stepper>
-
-            <div>
+            <div className="d-flex align-flex-start">
                 <Button
                     disabled={activeStep === 0 || activeStep === 3}
                     onClick={handleBack}
+                    className="mr-2"
                 >
-                    Back
+                    <ArrowBackIcon
+                        fontSize="large"
+                        className="cursor-pointer b b-radius-50 color-white"
+                    />
                 </Button>
-            </div>
 
-            {getStepContent(activeStep)}
+                {getStepContent(activeStep)}
+            </div>
         </Container>
     );
 };

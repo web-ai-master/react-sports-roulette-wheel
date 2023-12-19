@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Wheel } from "react-custom-roulette";
+import { Button } from "@mui/material";
+
 import "../assets/css/wheel.css";
 
 const WheelStep = ({ selectedEvent, onResult }) => {
@@ -15,10 +17,10 @@ const WheelStep = ({ selectedEvent, onResult }) => {
 		numbers = shuffleArray(numbers);
 
 		const wheelData = numbers.map((number, index) => {
-			if(index === 18) {
+			if (index === 18) {
 				return { option: '0', style: { backgroundColor: 'green', textColor: 'white' } }
-			} else if(index === 37) {
-				return { option: '00', style: { backgroundColor: 'green', textColor: 'white' }}
+			} else if (index === 37) {
+				return { option: '00', style: { backgroundColor: 'green', textColor: 'white' } }
 			} else
 				return {
 					option: number.toString(),
@@ -49,60 +51,53 @@ const WheelStep = ({ selectedEvent, onResult }) => {
 	}
 
 	return (
-		<div className='roulette-wheel-container'>
-			<h2>
-				Roulette Wheel
-			</h2>
-			<div>
-				<span> {team_red} </span>
-				<span style={{
-					display: 'inline-block',
-					width: '100px',
-					height: '100px',
-					backgroundColor: 'red',
-					borderRadius: '50%',
-					marginLeft: '10px',
-					marginTop: '10px',
-					border: '1px solid black',
-				}}></span>
-				<span> {team_black} </span>
-				<span style={{
-					display: 'inline-block',
-					width: '100px',
-					height: '100px',
-					backgroundColor: 'black',
-					borderRadius: '50%',
-					marginLeft: '10px',
-					marginTop: '10px',
-					border: '1px solid black',
-				}}></span>
-			</div>
-			<button onClick={spinWheel}>
-				Spin the wheel
-			</button>
-			{
-				winner && (
-					<div>
-						<span> {`Winner : ${winner} !`} </span>
+		<div className="d-flex content-center w-100">
+			<div className='roulette-wheel-container'>
+				<div className='d-flex mb-2'>
+					<div className='d-flex align-center'>
+						<span> {team_red} </span>
+						<span className='d-inline-block b b-radius-50 ml-1' style={{
+							display: 'inline-block',
+							width: '30px',
+							height: '30px',
+							backgroundColor: 'red',
+						}}></span>
 					</div>
-				)
-			}
+					<div className='d-flex align-center ml-2'>
+						<span> {team_black} </span>
+						<span className='d-inline-block b b-radius-50 ml-1' style={{
+							width: '30px',
+							height: '30px',
+							backgroundColor: 'black',
+						}}></span>
+					</div>
+				</div>
+				<Button variant="contained" color="error" onClick={spinWheel}>
+					Spin the wheel
+				</Button>
+				{
+					winner && (
+						<div>
+							<span> {`Winner : ${winner} !`} </span>
+						</div>
+					)
+				}
 
-			<Wheel
-				mustStartSpinning={mustSpin}
-				prizeNumber={prizeNumber}
-				textColors={['#ffffff']}
-				textDistance={90}
-				perpendicularText={true}
-				innerRadius={60}
-				disableInitialAnimation={true}
-				onStopSpinning={() => {
-					setMustSpin(false);
-					console.log("prize Number : ", prizeNumber);
-					setWinner(prizeNumber % 2 === 0 ? team_red : team_black);
-				}}
-				data={data} />
+				<Wheel
+					mustStartSpinning={mustSpin}
+					prizeNumber={prizeNumber}
+					textColors={['#ffffff']}
+					textDistance={87}
+					perpendicularText={true}
+					innerRadius={60}
+					disableInitialAnimation={true}
+					onStopSpinning={() => {
+						setMustSpin(false);
+						setWinner(prizeNumber % 2 === 0 ? team_red : team_black);
+					}}
+					data={data} />
 
+			</div>
 		</div>
 	)
 }

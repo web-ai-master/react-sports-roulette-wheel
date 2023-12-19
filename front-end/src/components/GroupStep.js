@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Grid } from "@mui/material";
+
 import { GROUPS_API } from "../utils/api";
-import { ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
 
 const GroupStep = ({ onSelectGroup, onHandleNext }) => {
     const [groups, setGroups] = useState([]);
@@ -22,31 +23,25 @@ const GroupStep = ({ onSelectGroup, onHandleNext }) => {
         onSelectGroup(group);
     };
     return (
-        <div>
-            <h2>Select a Group</h2>
-            <ImageList>
-                {
-                    groups.map((group) => (
-                        <ImageListItem key={group.id}>
-                            <img
-                                key={group.id}
-                                style={{
-                                    width: "100px",
-                                    height: "100px",
-                                    padding: "10px",
-                                    marginRight: "10px",
-                                    cursor: "pointer",
-                                }}
-                                onClick={() => handelSelectGroup(group)}
-                                src={group.image}
-                                alt="groupImage"
-                            />
-                            <ImageListItemBar title={group.name} />
-                        </ImageListItem>
-                    ))
-                }
-            </ImageList>
-        </div>
+        <Grid container spacing={3} className="content-center">
+            {groups.map((group) => (
+                <Grid item xs={3} className="text-center">
+                    <img
+                        key={group.id}
+                        style={{
+                            width: "200px",
+                            height: "150px",
+                            objectFit: "contain",
+                        }}
+                        className="p-1 cursor-pointer"
+                        onClick={() => handelSelectGroup(group)}
+                        src={group.image}
+                        alt="groupImage"
+                    />
+                    <h3>{group.name}</h3>
+                </Grid>
+            ))}
+        </Grid>
     );
 };
 
